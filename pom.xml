@@ -8,11 +8,11 @@
   <artifactId>cuthand-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>cuthand-common</module>
-        <module>cuthand-manager</module>
-        <module>cuthand-web</module>
-    </modules>
+    <!--<modules>-->
+        <!--<module>cuthand-common</module>-->
+        <!--<module>cuthand-manager</module>-->
+        <!--<module>cuthand-web</module>-->
+    <!--</modules>-->
 
     <name>cuthand-parent</name>
   <!-- FIXME change it to the project's website -->
@@ -49,7 +49,12 @@
         <version>${junit.version}</version>
         <scope>test</scope>
       </dependency>
-
+      <!-- 连接池 -->
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>druid</artifactId>
+        <version>${druid.version}</version>
+      </dependency>
       <!-- Spring -->
       <dependency>
         <groupId>org.springframework</groupId>
@@ -88,7 +93,11 @@
         <artifactId>mybatis-spring</artifactId>
         <version>${mybatis.spring.version}</version>
       </dependency>
-
+      <dependency>
+        <groupId>com.github.miemiedev</groupId>
+        <artifactId>mybatis-paginator</artifactId>
+        <version>${mybatis.paginator.version}</version>
+      </dependency>
       <!-- 分页助手 -->
       <dependency>
         <groupId>com.github.pagehelper</groupId>
